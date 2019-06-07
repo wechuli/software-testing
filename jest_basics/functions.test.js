@@ -37,3 +37,10 @@ test("user Should be Paul Wechuli Object", () => {
   //toBe is for primitve types, not objects and arrays
   expect(createUser()).toEqual({ firstName: "Paul", lastName: "Wechuli" });
 });
+
+
+test('should be under 1600', () => {
+  const load1 = 800;
+  const load2 = 700;
+  expect(load1+)
+})
