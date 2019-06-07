@@ -1,4 +1,4 @@
-const { add, isNull, returnValue, createUser } = require("./functions");
+const { add, isNull, returnValue, createUser,addFunction } = require("./functions");
 
 test("add 2 + 3 to equal 5", () => {
   expect(add(2, 3)).toBe(5); //toBe is an example of a matcher
@@ -39,8 +39,13 @@ test("user Should be Paul Wechuli Object", () => {
 });
 
 
+
+//Less than and greater than
 test('should be under 1600', () => {
   const load1 = 800;
   const load2 = 700;
-  expect(load1+)
+  expect(addFunction(load1,load2)).toBeLessThan(1800);
 })
+
+
+//Regular expressions
