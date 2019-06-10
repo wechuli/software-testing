@@ -1,3 +1,4 @@
+const axios = require("axios");
 module.exports = {
   add(num1, num2) {
     return num1 + num2;
@@ -15,7 +16,10 @@ module.exports = {
     };
     return user;
   },
-  addFunction(param,param2){
+  addFunction(param, param2) {
     return param + param2;
+  },
+  fetchUser() {
+    return axios.get("https://jsonplaceholder.typicode.com/users/1");
   }
 };
